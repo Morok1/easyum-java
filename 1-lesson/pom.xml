@@ -15,6 +15,7 @@
         <module>hibernate-1</module>
         <module>hibernate-2</module>
         <module>hibernate-3</module>
+        <module>spring</module>
     </modules>
     <dependencies>
         <dependency>
