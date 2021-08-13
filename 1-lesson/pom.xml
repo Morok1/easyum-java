@@ -54,7 +54,4 @@
             <version>${version.lombok}</version>
         </dependency>
     </dependencies>
-
-
-
 </project>

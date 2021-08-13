@@ -1,7 +1,5 @@
 package com.easyum.hibernate.chapter1;
 
-import com.easyum.hibernate.chapter1.Book;
-import com.easyum.hibernate.chapter1.Publisher;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

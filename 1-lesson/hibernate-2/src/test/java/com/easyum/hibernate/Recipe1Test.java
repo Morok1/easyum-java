@@ -16,15 +16,15 @@ public class Recipe1Test {
     @DataProvider(name = "idClassNames")
     Object[][] getClassNames() {
         return new Object[][]{
-                {"com.easyum.hibernate.recipe1.AutoIdEntity",},
-                {"com.easyum.hibernate.recipe1.HiloIdEntity",},
-                {"com.easyum.hibernate.recipe1.IdentityIdEntity",},
-                {"com.easyum.hibernate.recipe1.IncrementIdEntity",},
-                {"com.easyum.hibernate.recipe1.SequenceIdEntity",},
-                {"com.easyum.hibernate.recipe1.TableIdEntity",},
-                {"com.easyum.hibernate.recipe1.UUIDIdEntity",},
-                {"com.easyum.hibernate.recipe1.SequenceStyleIdEntity",},
-                {"com.easyum.hibernate.recipe1.EnhancedTableIdEntity",},
+//                {"com.easyum.hibernate.recipe1.AutoIdEntity",},
+                {"com.easyum.hibernate.recipe1.HiloIdEntity",}
+//                {"com.easyum.hibernate.recipe1.IdentityIdEntity",}
+//                {"com.easyum.hibernate.recipe1.IncrementIdEntity",}
+//                {"com.easyum.hibernate.recipe1.SequenceIdEntity",}
+//                {"com.easyum.hibernate.recipe1.TableIdEntity",},
+//                {"com.easyum.hibernate.recipe1.UUIDIdEntity",},
+//                {"com.easyum.hibernate.recipe1.SequenceStyleIdEntity",},
+//                {"com.easyum.hibernate.recipe1.EnhancedTableIdEntity",},
         };
     }
 
@@ -57,7 +57,7 @@ public class Recipe1Test {
             session.close();
         }
         for (Object key : generatedKeys) {
-            System.out.println(key);
+            System.out.println("!!! key"+key);
         }
         assertEquals(generatedKeys.size(), 40);
     }

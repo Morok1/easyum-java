@@ -12,7 +12,7 @@ import javax.persistence.Id;
 public class SequenceStyleIdEntity {
     @Id
     @GeneratedValue( generator="IdGen")
-	@GenericGenerator(strategy="org.hibernate.id.enhanced.SequenceStyleGenerator",name="IdGen", 
+	@GenericGenerator(strategy="org.hibernate.id.enhanced.SequenceStyleGenerator",name="IdGen",
 			parameters = {
             @Parameter(name = "sequence_name", value = "seq_id_gen"),
 			@Parameter(name = "optimizer", value = "pooled"),

@@ -28,6 +28,6 @@
 
     <properties>
         <spring-boot.version>2.5.1</spring-boot.version>
-        <version.lombok>1.14.2</version.lombok>
+        <version.lombok>1.18.20</version.lombok>
     </properties>
 </project>

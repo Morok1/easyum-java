@@ -12,8 +12,8 @@ import javax.persistence.Id;
 public class EnhancedTableIdEntity {
 	
     @Id
-    @GeneratedValue( generator="TableIdGen")
-	@GenericGenerator(strategy="org.hibernate.id.enhanced.TableGenerator",name="TableIdGen", 
+    @GeneratedValue(generator="TableIdGen")
+	@GenericGenerator(strategy="org.hibernate.id.enhanced.TableGenerator",name="TableIdGen",
 			parameters = {
 			@Parameter(name = "table_name", value = "enhanced_hibernate_sequences"),
             @Parameter(name = "segment_value", value = "id"),
