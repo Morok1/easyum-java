@@ -120,7 +120,8 @@ How do you map objects using a one-to-many association with a foreign key? Can y
 Problem
 How do you map objects using a one-to-many bidirectional association with a foreign key?
 ### 7-3 Mapping a One-to-Many Bidirectional Association
-    Using a Join Table
+Problem
+How do you map objects using a one-to-many association with a join table?
 ### 7-4. Mapping a Many-to-Many Association with a Join Table
 Problem
 How do you map objects using a many-to-many unidirectional association with a join table?
