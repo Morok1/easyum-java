@@ -32,3 +32,8 @@ Howework
     4. Write controllers
  - Help links 
    1.Spring boot with h2 https://www.baeldung.com/spring-boot-h2-database
+
+Ideas of projects
+1. Fin Adviser
+2. Trello copy for organization work
+3. Knowledge base
