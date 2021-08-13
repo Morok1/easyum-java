@@ -13,7 +13,7 @@ public class AuthorTest {
         final Session session = sessionFactory.openSession();
         final Transaction transaction = session.beginTransaction();
 
-        final  Author author = new Author("Author");
+        final Author author = new Author("Author");
         session.persist(author);
         transaction.commit();
         session.close();
