@@ -6,8 +6,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class AuthorTest {
     @Test
     public void testSavingAuthor() {
