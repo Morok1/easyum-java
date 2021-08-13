@@ -15,7 +15,6 @@ public class AuthorTest {
         Transaction transaction = session.beginTransaction();
         Author author = new Author("Author");
         session.persist(author);
-        session.
         transaction.commit();
         session.close();
 
