@@ -13,9 +13,8 @@
         <module>parent-boot</module>
         <module>lesson-2</module>
         <module>lesson-3</module>
-        <module>AlexanderPopov</module>
         <module>Alexander</module>
-        <module>Alexander1</module>
+        <module>nabiev</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
