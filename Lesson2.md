@@ -17,16 +17,18 @@ From gradle to maven - https://dzone.com/articles/how-to-convert-maven-to-gradle
 #Hibernate: 
 ### Bidirectional @OneToMany  
 - Bidirectional @OneToMany association from the performance perspective.
-####Key points:
-- always cascade from parent to child
--  use mappedBy on the parent
-- use orphanRemoval on parent in order to remove children without references
-- use helper methods on parent to keep both sides of the association in sync
-- use lazy fetching on both side of the association
-- as entities identifiers, use assigned identifiers (business key, natural key (@NaturalId)) and/or database-generated identifiers and override (on child-side) properly the equals() and hashCode() methods as here
-- if toString() need to be overridden, then pay attention to involve only the basic attributes fetched when the entity is loaded from the database
 
-### Bidirectional @OneToMany  
-- Bidirectional @OneToMany association from the performance perspective.
-#### Key points:
-- always cascade from parent to child (from Author to Book) pls check other case - from Book  to Author
+
+Howework
+1. Reproduce lazy initialization exception
+2. 1.Создайте в цикле 200 объектов author и сохраните в БД
+     2. Значения полей могут быть любыми
+     3. Используйте метод flush для каждых 10 объектов
+     4. Метод сommit выполняйте один раз в конце
+3. 
+    1. Create Spring boot application with minimum two entities,
+    2. Converting this to domain model
+    3. Write services 
+    4. Write controllers
+ - Help links 
+   1.Spring boot with h2 https://www.baeldung.com/spring-boot-h2-database
