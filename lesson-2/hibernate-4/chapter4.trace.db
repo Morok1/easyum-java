@@ -1,0 +1,55 @@
+08-14 11:31:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "AUDIODISC2" не найдена
+Table "AUDIODISC2" not found; SQL statement:
+alter table AudioDisc2 drop constraint FK_bwgwixedv3968fba5ud87ijk0 [42102-178]
+08-14 11:31:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "VIDEODISC2" не найдена
+Table "VIDEODISC2" not found; SQL statement:
+alter table VideoDisc2 drop constraint FK_3d209x9v8jwjlryqgnmmu44yy [42102-178]
+08-14 11:31:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Последовательность "HIBERNATE_SEQUENCE" не найдена
+Sequence "HIBERNATE_SEQUENCE" not found; SQL statement:
+drop sequence hibernate_sequence [90036-178]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.command.ddl.DropSequence.update(DropSequence.java:46)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:79)
+	at org.h2.command.Command.executeUpdate(Command.java:254)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:132)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:117)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:64)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.perform(SchemaExport.java:418)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:372)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:304)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:293)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:517)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1857)
+	at com.easyum.hibernate.util.HibernateUtil.buildSessionFactory(HibernateUtil.java:23)
+	at com.easyum.hibernate.util.HibernateUtil.<clinit>(HibernateUtil.java:14)
+	at com.easyum.hibernate.Recipe1.cleanAll(Recipe1.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)

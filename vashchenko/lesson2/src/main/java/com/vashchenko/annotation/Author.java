@@ -2,17 +2,16 @@ package com.vashchenko.annotation;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-@Entity
 @Data
+@Entity
+@Table(name = "author")
 public class Author {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name = "id")
     private Long id;
-
+    @Column(name = "name")
     private final String name;
 }
