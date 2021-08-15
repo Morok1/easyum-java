@@ -4,14 +4,25 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-@Data
+//@Data
 @Entity
 @Table(name = "author")
 public class Author {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private Long id;
     @Column(name = "name")
-    private final String name;
+    private String name;
+
+    public Author() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

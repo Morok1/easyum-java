@@ -15,8 +15,11 @@ public class AuthorTest {
         SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        Author author = new Author("Author");
-        session.persist(author);
+        Author author = new Author();
+        author.setName("Author");
+
+//        session.persist(author);
+        session.save(author);
         transaction.commit();
         session.close();
 
