@@ -1,5 +1,7 @@
 package com.easyum.hibernate.chapter1;
 
+import java.util.Objects;
+
 /**
  * Created by jottinge on 6/25/14.
  */
@@ -39,9 +41,9 @@ public class Publisher {
 
         Publisher publisher = (Publisher) o;
 
-        if (address != null ? !address.equals(publisher.address) : publisher.address != null) return false;
-        if (code != null ? !code.equals(publisher.code) : publisher.code != null) return false;
-        if (name != null ? !name.equals(publisher.name) : publisher.name != null) return false;
+        if (!Objects.equals(address, publisher.address)) return false;
+        if (!Objects.equals(code, publisher.code)) return false;
+        if (!Objects.equals(name, publisher.name)) return false;
 
         return true;
     }

@@ -8,19 +8,18 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>lesson-2</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>hibernate-4</module>
-        <module>hibernate-5</module>
-        <module>hibernate-6</module>
-        <module>hibernate-7</module>
-        <module>hibernate-8</module>
-        <module>hibernate-9</module>
-        <module>hibernate-10</module>
-        <module>spring-boot-simple</module>
+        <module>lesson2</module>
     </modules>
+
+    <groupId>com.easyum</groupId>
+    <artifactId>esmagin</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -56,6 +55,7 @@
             <artifactId>util</artifactId>
             <version>${version.util}</version>
         </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

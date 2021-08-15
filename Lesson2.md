@@ -37,3 +37,9 @@ Ideas of projects
 1. Fin Adviser
 2. Trello copy for organization work
 3. Knowledge base
+
+
+##Вопросы
+1. Зачеркнутый maven pom.xml https://programmerah.com/idea-maven-pom-xml-is-grayed-out-and-strikethrough-appears-26815/
+2. Reactor maven https://cwiki.apache.org/confluence/display/MAVEN/DuplicateProjectException
+3. Reactor - https://coderoad.ru/2050241/%D0%A7%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-reactor-%D0%B2-Maven

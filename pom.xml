@@ -15,6 +15,7 @@
         <module>lesson-3</module>
         <module>Alexander</module>
         <module>nabiev</module>
+        <module>esmagin</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
