@@ -37,3 +37,7 @@ Ideas of projects
 1. Fin Adviser
 2. Trello copy for organization work
 3. Knowledge base
+
+
+##Вопросы
+1. Зачеркнутый maven pom.xml https://programmerah.com/idea-maven-pom-xml-is-grayed-out-and-strikethrough-appears-26815/

@@ -19,6 +19,7 @@
         <module>hibernate-8</module>
         <module>hibernate-9</module>
         <module>hibernate-10</module>
+        <module>spring-boot-simple</module>
     </modules>
 
     <dependencies>
