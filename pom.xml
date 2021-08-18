@@ -16,6 +16,7 @@
         <module>Alexander</module>
         <module>nabiev</module>
         <module>esmagin</module>
+        <module>spring-boot-hibernate-recipes</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
