@@ -11,4 +11,6 @@ public class Author {
     private Long id;
     @Column
     private final String name;
+    @Column
+    private final String publishingHouse;
 }
