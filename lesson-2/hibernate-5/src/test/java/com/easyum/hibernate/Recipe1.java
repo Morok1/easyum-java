@@ -20,6 +20,7 @@ public class Recipe1 {
         Transaction tx = session.beginTransaction();
         session.createQuery("delete from ReaderErrata1 ").executeUpdate();
         session.createQuery("delete from Book1").executeUpdate();
+        session.createQuery("DROP Book1").executeUpdate();
         tx.commit();
         session.close();
     }
