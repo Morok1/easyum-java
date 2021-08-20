@@ -9,7 +9,7 @@ import org.junit.Test;
 public class AuthorTest {
 
     @Test
-    public void testSavingAuthor(){
+    public void testSavingAuthor() {
         final SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
         final Session session = sessionFactory.openSession();
         final Transaction transaction = session.beginTransaction();

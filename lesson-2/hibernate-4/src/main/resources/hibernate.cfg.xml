@@ -6,7 +6,7 @@
     <session-factory>
         <property name="connection.driver_class">org.postgresql.Driver</property>
         <property name="connection.url">jdbc:postgresql://localhost:5432/hibernate1?createDatabaseIfNotExist=true</property>
-        <property name="hibernate.dialect">org.hibernate.dialect.HSQLDialect</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
         <property name="hibernate.hbm2ddl.auto">create</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.discriminator.ignore_explicit_for_joined">true</property>

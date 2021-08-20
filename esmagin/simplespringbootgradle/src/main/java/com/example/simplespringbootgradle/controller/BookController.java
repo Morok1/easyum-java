@@ -9,8 +9,9 @@ import org.springframework.web.bind.annotation.*;
 public class BookController {
     @Autowired
     private BookService bookService;
+
     @GetMapping("/{id}")
-    public Book getBookById(@PathVariable("id") Long id){
+    public Book getBookById(@PathVariable("id") Long id) {
         return bookService.getBookById(id);
     }
 }

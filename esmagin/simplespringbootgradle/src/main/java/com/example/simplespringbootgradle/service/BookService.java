@@ -9,7 +9,8 @@ import org.springframework.stereotype.Service;
 public class BookService {
     @Autowired
     private BookRepository bookRepository;
-    public Book getBookById(Long id){
-        return bookRepository.findById(id).orElse( Book.builder().name("author").id(1l).build());
+
+    public Book getBookById(Long id) {
+        return bookRepository.findById(id).orElse(Book.builder().name("author").id(1l).build());
     }
 }
