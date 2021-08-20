@@ -35,7 +35,7 @@
 <!--        </plugins>-->
 <!--    </build>-->
     <properties>
-        <spring-boot.version>2.5.1</spring-boot.version>
+        <spring-boot.version>1.5.7.RELEASE</spring-boot.version>
         <version.lombok>1.18.20</version.lombok>
     </properties>
 </project>
