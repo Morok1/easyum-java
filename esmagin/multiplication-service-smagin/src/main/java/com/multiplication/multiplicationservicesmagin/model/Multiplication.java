@@ -4,12 +4,13 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-@Data
+
+
 @Entity
-@Table(schema = "MULTIPLICATION_OWNER")
 public class Multiplication {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue
+    @Column(name="MULTIPLICATION_ID")
     private long id;
     @Column
     private int factorA;
@@ -17,6 +18,9 @@ public class Multiplication {
     private int factorB;
     @Transient
     private int result;
+
+
+
 
 
 }

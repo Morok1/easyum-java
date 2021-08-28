@@ -6,7 +6,8 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
+@AllArgsConst
+ructor
 public class BookSummary2 {
     String bookName;
     String bookPublisher;
