@@ -7,9 +7,4 @@ import java.util.List;
 import java.util.Optional;
 
 public interface MultiplicationRepository extends JpaRepository<Multiplication, Long> {
-    @Override
-    Optional<Multiplication> findById(Long id);
-
-    @Override
-    List<Multiplication> findAll();
 }
