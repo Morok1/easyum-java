@@ -1,4 +1,4 @@
-package com.vashchenko.multi2.model;
+package com.multic.multi.model;
 
 import javax.persistence.*;
 
