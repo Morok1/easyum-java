@@ -7,7 +7,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table
-//        (schema="MULTIPLICATION_OWNER")
+        (schema="MULTIPLICATION_OWNER")
 public class Multiplication {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -19,6 +19,6 @@ public class Multiplication {
     @Transient
     private int result;
 
-//    @OneToOne(mappedBy = "multiplication")
-//    private MultiplicationAttempt multiplicationAttempt;
+    @OneToOne(mappedBy = "multiplication")
+    private MultiplicationAttempt multiplicationAttempt;
 }
