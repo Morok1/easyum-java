@@ -1,24 +1,23 @@
 package com.vashchenko.multi2.model;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 
-@Data
+@RequiredArgsConstructor
+@Getter
+@ToString
+@EqualsAndHashCode
 @Entity
-@Table
-        (schema="MULTIPLICATION_OWNER")
 public class Multiplication {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue
+    @Column(name = "MULTIPLICATION_ID")
     private Long id;
-    @Column
-    private int factorA;
-    @Column
-    private int factorB;
-    @Transient
-    private int result;
+    private final int factorA;
+    private final int factorB;
 
-    @OneToOne(mappedBy = "multiplication")
-    private MultiplicationAttempt multiplicationAttempt;
+    public Multiplication() {
+        this(0, 0);
+    }
 }
