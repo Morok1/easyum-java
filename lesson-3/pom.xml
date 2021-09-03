@@ -11,7 +11,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>hibernate-11</module>
-        <module>hibernate-12</module>
+<!--        <module>hibernate-12</module>-->
         <module>hibernate-13</module>
     </modules>
 

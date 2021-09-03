@@ -13,7 +13,10 @@
         <module>parent-boot</module>
         <module>lesson-2</module>
         <module>lesson-3</module>
-        <module>vashchenko</module>
+        <module>Alexander</module>
+        <module>nabiev</module>
+        <module>esmagin</module>
+        <module>spring-boot-hibernate-recipes</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
@@ -27,6 +30,7 @@
         <version.slf4j>1.7.7</version.slf4j>
         <version.logback>1.1.2</version.logback>
         <version.c3p0>0.9.5</version.c3p0>
+        <version.postgres>42.2.19</version.postgres>
         <version.util>1.0-SNAPSHOT</version.util>
 
     </properties>
@@ -104,6 +108,13 @@
                 <artifactId>hibernate-c3p0</artifactId>
                 <version>${version.hibernate}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${version.postgres}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -127,22 +138,6 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-            <version>2.5.1</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-jpa</artifactId>
-            <version>2.5.1</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 

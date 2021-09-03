@@ -14,8 +14,7 @@ create table VideoDisc2 (
         language varchar(255),
         id bigint not null,
         primary key (id))
-alter table AudioDisc2
-add constraint FK_i12wsunr063mpv71k08p1ptyh foreign key (id) references Disc2 alter table VideoDisc2
-add constraint FK_5devgqbkpsmk435tlx12x4fue foreign key (id) references Disc2
+alter table AudioDisc2 add constraint FK_i12wsunr063mpv71k08p1ptyh foreign key (id) references Disc2
+alter table VideoDisc2 add constraint FK_5devgqbkpsmk435tlx12x4fue foreign key (id) references Disc2
 
 

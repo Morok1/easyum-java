@@ -15,7 +15,7 @@ import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
-public class Recipe4 {
+public class    Recipe4 {
 @BeforeMethod
 public void cleanAll() {
     Session session = HibernateUtil.openSession();
