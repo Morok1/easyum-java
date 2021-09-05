@@ -10,7 +10,7 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import java.util.Optional;
+import java.util.*;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
@@ -75,4 +75,67 @@ public class MultiplicationServiceImplTest {
 
         assertTrue(res);
         verify(multiplicationAttemptRepository).save(attempt);
-    }}
+    }
+
+    public static void main(String[] args) {
+        sortSentence("is2 sentence4 This1 a3");
+        numUniqueEmails(new String[]{"test.email+alex@leetcode.com",
+                "test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"});
+    }
+    public static String sortSentence(String s) {
+        String[] s1 = s.split(" ");
+        Map<String,String> res = new HashMap<>();
+        for (int i = 0; i < s1.length; i++) {
+            res.put(String.valueOf(s1[i].charAt(s1[i].length() -1)),
+                    s1[i].substring(0, s1[i].length() - 1));
+        }
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < s1.length; i++) {
+            builder.append(res.get(String.valueOf(i+1))).append(" ");
+        }
+        return builder.substring(0,builder.length()-1);
+    }
+
+//    public int deepestLeavesSum(TreeNode root) {
+//        getValueOfDeepestRoot( root);
+//    }
+
+//    private Integer getValueOfDeepestRoot(TreeNode root) {
+//        if(root == null) return 0;
+//        if(root.left == null && root.right == null) return root.val;
+//    }
+
+//    public List<Integer> partitionLabels(String s) {
+//        Map<Character, Integer> res =new HashMap<>();
+//        for (int i = 0; i < s.length(); i++) {
+//            res.put(s.charAt(i),s.lastIndexOf(s.charAt(i)));
+//        }
+//
+//    }
+    public class TreeNode {
+      int val;
+      TreeNode left;
+      TreeNode right;
+      TreeNode() {}
+      TreeNode(int val) { this.val = val; }
+      TreeNode(int val, TreeNode left, TreeNode right) {
+          this.val = val;
+          this.left = left;
+          this.right = right;
+      }
+  }
+    public static int numUniqueEmails(String[] emails) {
+        Set<String> set = new HashSet<>();
+        for (int i = 0; i < emails.length ; i++) {
+            set.add(performEmail(emails[i]));
+        }
+        return set.size();
+    }
+
+    private static String performEmail(String email) {
+        String[] split = email.split("@");
+        String[] split1 = split[0].split("\\+");
+        String replace = split1[0].replace(".", "");
+        return replace + "@"+ split[1];
+    }
+}
