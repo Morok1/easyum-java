@@ -1,10 +1,10 @@
-package microservices.book.multiplication.controller;
+package multiplication.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import microservices.book.multiplication.domain.Multiplication;
-import microservices.book.multiplication.domain.MultiplicationResultAttempt;
-import microservices.book.multiplication.domain.User;
-import microservices.book.multiplication.service.MultiplicationService;
+import multiplication.domain.Multiplication;
+import multiplication.domain.MultiplicationResultAttempt;
+import multiplication.domain.User;
+import multiplication.service.MultiplicationService;
 import org.assertj.core.util.Lists;
 import org.junit.Before;
 import org.junit.Test;

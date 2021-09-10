@@ -23,6 +23,7 @@ public class Main {
 
         ShoppingCart cart2 = (ShoppingCart) context.getBean("shoppingCart");
         cart2.addItem(dvdrw);
+        System.out.println("Shopping cart 1 contains " + cart1.getItems());
         System.out.println("Shopping cart 2 contains " + cart2.getItems());
 
 

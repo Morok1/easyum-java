@@ -3,6 +3,7 @@ package com.multiplication.multiplicationservicesmagin.model;
 import lombok.*;
 
 import javax.persistence.*;
+
 @RequiredArgsConstructor
 @Getter
 @ToString

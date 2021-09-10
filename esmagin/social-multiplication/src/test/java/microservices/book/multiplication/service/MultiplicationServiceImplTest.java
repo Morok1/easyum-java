@@ -1,10 +1,10 @@
-package microservices.book.multiplication.service;
+package multiplication.service;
 
-import microservices.book.multiplication.domain.Multiplication;
-import microservices.book.multiplication.domain.MultiplicationResultAttempt;
-import microservices.book.multiplication.domain.User;
-import microservices.book.multiplication.repository.MultiplicationResultAttemptRepository;
-import microservices.book.multiplication.repository.UserRepository;
+import multiplication.domain.Multiplication;
+import multiplication.domain.MultiplicationResultAttempt;
+import multiplication.domain.User;
+import multiplication.repository.MultiplicationResultAttemptRepository;
+import multiplication.repository.UserRepository;
 import org.assertj.core.util.Lists;
 import org.junit.Before;
 import org.junit.Test;

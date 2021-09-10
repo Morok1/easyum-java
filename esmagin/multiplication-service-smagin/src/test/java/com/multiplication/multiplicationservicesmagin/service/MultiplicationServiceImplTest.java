@@ -8,14 +8,16 @@ import com.multiplication.multiplicationservicesmagin.repository.MultiplicationA
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
 import java.util.*;
 
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.*;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.Assert.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Matchers.isA;
 import static org.mockito.Mockito.verify;
 
 public class MultiplicationServiceImplTest {
@@ -28,6 +30,8 @@ public class MultiplicationServiceImplTest {
 
     @Mock
     private MultUserRepository multUserRepository;
+
+
 
     @Before
     public void setUp() throws Exception {

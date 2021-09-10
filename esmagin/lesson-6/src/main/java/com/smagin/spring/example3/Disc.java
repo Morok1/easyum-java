@@ -1,7 +1,9 @@
 package com.smagin.spring.example3;
 
-public class Disc extends Product {
+import lombok.ToString;
 
+public class Disc extends Product {
+    @InjectRandom
     private int capacity;
 
     public Disc() {

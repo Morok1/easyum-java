@@ -8,10 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ShopConfiguration {
-    @Bean
-    public ShoppingCart shoppingCart(){
-        return new ShoppingCart();
-    }
+
     @Bean
     public Product aaa() {
         Battery p1 = new Battery();

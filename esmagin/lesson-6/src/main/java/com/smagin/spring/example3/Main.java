@@ -1,12 +1,12 @@
 package com.smagin.spring.example3;
 
 import com.smagin.spring.example3.config.ShopConfiguration;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 
 public class Main {
-
     public static void main(String[] args) throws Exception {
         ApplicationContext context = new AnnotationConfigApplicationContext(ShopConfiguration.class);
 

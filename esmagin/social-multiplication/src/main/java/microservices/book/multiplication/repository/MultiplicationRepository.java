@@ -1,6 +1,6 @@
-package microservices.book.multiplication.repository;
+package multiplication.repository;
 
-import microservices.book.multiplication.domain.Multiplication;
+import multiplication.domain.Multiplication;
 import org.springframework.data.repository.CrudRepository;
 
 /**

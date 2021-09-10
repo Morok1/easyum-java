@@ -1,7 +1,7 @@
-package microservices.book.multiplication.service;
+package multiplication.service;
 
-import microservices.book.multiplication.domain.Multiplication;
-import microservices.book.multiplication.domain.MultiplicationResultAttempt;
+import multiplication.domain.Multiplication;
+import multiplication.domain.MultiplicationResultAttempt;
 
 import java.util.List;
 

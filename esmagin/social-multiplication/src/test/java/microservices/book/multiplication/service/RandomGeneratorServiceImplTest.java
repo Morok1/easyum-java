@@ -1,4 +1,4 @@
-package microservices.book.multiplication.service;
+package multiplication.service;
 
 import org.junit.Before;
 import org.junit.Test;

@@ -11,4 +11,5 @@ public class Example1Configuration {
     public User1 getUser(){
         return new User1("John");
     }
+
 }
